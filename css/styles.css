@@ -7,7 +7,7 @@
 :root {
     --azul: #2563eb;
     --azul-oscuro: #1e293b;
-    --azul-sidebar: #1e293b;
+    --azul-barra: #1e293b;
     --fondo: #f4f7fa;
     --blanco: #ffffff;
     --texto: #1e293b;
@@ -23,7 +23,7 @@ body {
 
 /* LOGIN */
 
-.login-body {
+.cuerpo-login {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -31,50 +31,50 @@ body {
     background: #f5f7f9;
 }
 
-.login-container {
+.contenedor-login {
     width: 100%;
     max-width: 450px;
     padding: 20px;
 }
 
-.login-form {
+.formulario-login {
     background: var(--blanco);
     padding: 30px;
     border-radius: 6px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
-.login-form h1 {
+.formulario-login h1 {
     text-align: center;
     font-size: 25px;
     margin-bottom: 8px;
 }
 
-.login-form h1 span {
+.formulario-login h1 span {
     color: var(--azul);
 }
 
-.subtitle {
+.subtitulo {
     text-align: center;
     font-size: 11px;
     color: #8a98a8;
     margin-bottom: 25px;
 }
 
-.form-group {
+.grupo-formulario {
     display: flex;
     flex-direction: column;
     margin-bottom: 17px;
 }
 
-.form-group label {
+.grupo-formulario label {
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 7px;
 }
 
-.form-group input,
-.form-group select {
+.grupo-formulario input,
+.grupo-formulario select {
     width: 100%;
     height: 38px;
     border: 1px solid var(--borde);
@@ -84,31 +84,31 @@ body {
     outline: none;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+.grupo-formulario input:focus,
+.grupo-formulario select:focus {
     border-color: var(--azul);
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
-.terms {
+.terminos {
     display: flex;
     align-items: center;
     gap: 7px;
     margin-bottom: 20px;
 }
 
-.terms input {
+.terminos input {
     width: 12px;
     height: 12px;
 }
 
-.terms label {
+.terminos label {
     font-size: 9px;
     color: #7b8794;
 }
 
-.login-form button,
-.new-project {
+.formulario-login button,
+.nuevo-proyecto {
     border: none;
     background: var(--azul);
     color: white;
@@ -117,45 +117,45 @@ body {
     transition: 0.3s;
 }
 
-.login-form button {
+.formulario-login button {
     width: 100%;
     height: 40px;
     font-weight: bold;
     font-size: 12px;
 }
 
-.login-form button:hover,
-.new-project:hover {
+.formulario-login button:hover,
+.nuevo-proyecto:hover {
     background: #1d4ed8;
 }
 
 /* DASHBOARD */
 
-.dashboard {
+.panel {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 220px 1fr;
 }
 
-.sidebar {
-    background: var(--azul-sidebar);
+.barra-lateral {
+    background: var(--azul-barra);
     color: white;
     padding: 18px 12px;
 }
 
-.sidebar h2 {
+.barra-lateral h2 {
     font-size: 12px;
     margin-bottom: 25px;
     padding-left: 10px;
 }
 
-.sidebar nav {
+.barra-lateral nav {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.sidebar a {
+.barra-lateral a {
     color: #cbd5e1;
     text-decoration: none;
     padding: 12px 10px;
@@ -164,24 +164,24 @@ body {
     transition: 0.3s;
 }
 
-.sidebar a:hover,
-.sidebar a.active {
+.barra-lateral a:hover,
+.barra-lateral a.activo {
     background: #334155;
     color: white;
 }
 
-.sidebar .logout {
+.barra-lateral .cerrar-sesion {
     color: #f87171;
     margin-top: 25px;
 }
 
-.main-content {
+.contenido-principal {
     min-width: 0;
     display: flex;
     flex-direction: column;
 }
 
-.topbar {
+.barra-superior {
     height: 60px;
     background: white;
     border-bottom: 1px solid var(--borde);
@@ -192,13 +192,13 @@ body {
     font-size: 11px;
 }
 
-.user {
+.usuario {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.user strong {
+.usuario strong {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -210,34 +210,34 @@ body {
     font-size: 10px;
 }
 
-.content {
+.contenido {
     padding: 25px;
     flex: 1;
 }
 
-.title-section {
+.seccion-titulo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.title-section h1 {
+.seccion-titulo h1 {
     font-size: 18px;
 }
 
-.new-project {
+.nuevo-proyecto {
     padding: 9px 15px;
     font-size: 10px;
 }
 
-.projects {
+.proyectos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 
-.project-card {
+.tarjeta-proyecto {
     background: white;
     border: 1px solid var(--borde);
     border-radius: 5px;
@@ -246,12 +246,12 @@ body {
     transition: 0.3s;
 }
 
-.project-card:hover {
+.tarjeta-proyecto:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.status {
+.estado {
     display: inline-block;
     font-size: 7px;
     font-weight: bold;
@@ -260,39 +260,39 @@ body {
     margin-bottom: 10px;
 }
 
-.development {
+.desarrollo {
     background: #dbeafe;
     color: #2563eb;
 }
 
-.review {
+.revision {
     background: #fef3c7;
     color: #b45309;
 }
 
-.completed {
+.completado {
     background: #dcfce7;
     color: #15803d;
 }
 
-.project-card h2 {
+.tarjeta-proyecto h2 {
     font-size: 12px;
     margin-bottom: 10px;
 }
 
-.project-card p {
+.tarjeta-proyecto p {
     font-size: 9px;
     line-height: 1.5;
     color: var(--gris);
     margin-bottom: 12px;
 }
 
-.tags {
+.etiquetas {
     display: flex;
     gap: 5px;
 }
 
-.tags span {
+.etiquetas span {
     background: #f1f5f9;
     color: #64748b;
     padding: 4px 6px;
@@ -311,29 +311,29 @@ footer {
 
 @media (max-width: 768px) {
 
-    .dashboard {
+    .panel {
         grid-template-columns: 1fr;
     }
 
-    .sidebar {
+    .barra-lateral {
         display: none;
     }
 
-    .projects {
+    .proyectos {
         grid-template-columns: 1fr;
     }
 
-    .title-section {
+    .seccion-titulo {
         align-items: flex-start;
         gap: 15px;
         flex-direction: column;
     }
 
-    .topbar {
+    .barra-superior {
         padding: 0 15px;
     }
 
-    .content {
+    .contenido {
         padding: 15px;
     }
 }
